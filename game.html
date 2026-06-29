@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanAlauddin | Reaction Game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">WanAlauddin</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="game.html">Game</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1 class="section-title">Reaction Time Game</h1>
+
+    <div class="game-area">
+      <p class="instructions">
+        Click the box below and wait until it turns <strong>green</strong>.
+        Then click as fast as you can to test your reaction time!
+      </p>
+
+      <div class="reaction-box" id="reactionBox">Click to start</div>
+
+      <div class="game-stats">
+        <div class="stat-card">
+          <div class="label">Reaction Time</div>
+          <div class="value" id="result">--</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Best</div>
+          <div class="value" id="best">--</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Attempts</div>
+          <div class="value" id="attempts">0</div>
+        </div>
+      </div>
+
+      <button class="game-btn" id="resetBtn">Reset</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WanAlauddin. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
