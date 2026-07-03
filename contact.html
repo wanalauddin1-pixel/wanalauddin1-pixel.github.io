@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanAlauddin | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">WanAlauddin</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="game.html">Game</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1 class="section-title">Contact Me</h1>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="fullName" class="required">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name">
+        <div class="error-message" id="fullNameError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="required">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <div class="error-message" id="emailError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="required">Password</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <div class="error-message" id="passwordError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="dob" class="required">Date of Birth</label>
+        <input type="date" id="dob">
+        <div class="error-message" id="dobError"></div>
+      </div>
+
+      <div class="form-group">
+        <label class="required">Gender</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+        <div class="error-message" id="genderError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="photo" class="required">Profile Photo</label>
+        <input type="file" id="photo" accept="image/jpeg,image/png,image/gif,image/webp">
+        <div class="error-message" id="photoError"></div>
+      </div>
+
+      <div class="form-group">
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the terms and conditions.</label>
+        </div>
+        <div class="error-message" id="termsError"></div>
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+
+      <div class="success-message" id="successMessage">
+        <h3>Success!</h3>
+        <p>Your information has been submitted. Thank you!</p>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WanAlauddin. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>
