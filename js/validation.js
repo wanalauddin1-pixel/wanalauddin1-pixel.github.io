@@ -154,6 +154,17 @@ document.addEventListener('DOMContentLoaded', function () {
       validateTerms();
 
     if (isValid) {
+      var records = JSON.parse(localStorage.getItem('contactRecords') || '[]');
+      records.push({
+        fullName: document.getElementById('fullName').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        dob: document.getElementById('dob').value,
+        gender: document.querySelector('input[name="gender"]:checked').value,
+        photoName: document.getElementById('photo').files[0].name,
+        submittedAt: new Date().toLocaleString()
+      });
+      localStorage.setItem('contactRecords', JSON.stringify(records));
+
       form.reset();
       successMsg.classList.add('show');
       setTimeout(function () {

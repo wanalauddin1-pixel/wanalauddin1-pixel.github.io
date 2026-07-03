@@ -563,6 +563,44 @@ body {
   background-color: var(--accent-hover);
 }
 
+/* ========== RECORDS PAGE ========== */
+.records-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.records-table th,
+.records-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.records-table th {
+  background-color: var(--bg-secondary);
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.records-table td {
+  color: var(--text-secondary);
+}
+
+.records-table tr:hover td {
+  background-color: rgba(79, 195, 247, 0.05);
+}
+
+.records-table tr:last-child td {
+  border-bottom: none;
+}
+
 /* ========== FOOTER ========== */
 footer {
   text-align: center;

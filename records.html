@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanAlauddin | Records</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html">WanAlauddin</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="game.html">Game</a></li>
+      <li><a href="records.html">Records</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1 class="section-title">Submission Records</h1>
+    <p style="text-align:center;color:var(--text-secondary);margin-bottom:2rem;">
+      Below are the form submissions stored in your browser.
+    </p>
+
+    <div id="recordsContainer">
+      <div style="text-align:center;padding:3rem;color:var(--text-secondary);">
+        Loading records...
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:1.5rem;">
+      <button class="btn" id="clearAllBtn" style="width:auto;padding:0.8rem 2.5rem;background-color:var(--error);">Clear All Records</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 WanAlauddin. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/records.js"></script>
+</body>
+</html>
